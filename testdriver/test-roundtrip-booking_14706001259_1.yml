@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 680f60ea390031a3fc26158a
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Select "Roundtrip" in the booking options.
+    commands:
+      - command: hover-text
+        text: Roundtrip
+        description: roundtrip option in the booking section
+        action: click
+  - prompt: Assert that the roundtrip option is selected.
+    commands:
+      - command: assert
+        expect: the roundtrip option is selected
