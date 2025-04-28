@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 680f60f2d6ee190249814c79
+steps:
+  - prompt: Check that the contact number is visible in the header.
+    commands:
+      - command: assert
+        expect: +39 0102094591 is visible in the header
+  - prompt: Assert that the contact number matches the expected format.
+    commands:
+      - command: assert
+        expect: +39 0102094591 is visible in the header
