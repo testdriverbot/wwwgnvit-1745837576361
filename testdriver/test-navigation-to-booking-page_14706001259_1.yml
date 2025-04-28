@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 680f60e3390031a3fc261585
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click on the "Booking" tab.
+    commands:
+      - command: hover-text
+        text: Booking
+        description: booking tab in the navigation bar
+        action: click
+  - prompt: Assert that the booking form is visible.
+    commands:
+      - command: assert
+        expect: the booking form is visible
