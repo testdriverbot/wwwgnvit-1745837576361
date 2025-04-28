@@ -1,0 +1,10 @@
+version: 4.2.29
+session: 680f60f9390031a3fc26159a
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Click on the user icon for login.
+    commands:
+      - command: hover-image
+        description: orange circle with a white user icon inside it in the top right corner
+        action: click
