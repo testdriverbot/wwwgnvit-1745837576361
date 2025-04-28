@@ -1,0 +1,9 @@
+version: 4.2.29
+session: 680f6101390031a3fc2615a3
+steps:
+  - prompt: Click the "Search" button.
+    commands:
+      - command: hover-text
+        text: SEARCH
+        description: search button in the booking section
+        action: click
