@@ -1,0 +1,33 @@
+version: 4.2.29
+session: 680f60f3390031a3fc261593
+steps:
+  - prompt: Click on "Select The Date".
+    commands:
+      - command: hover-text
+        text: Sign up now!
+        description: close button on the pop-up
+        action: click
+      - command: hover-text
+        text: Choose
+        description: button next to Date of birth
+        action: click
+  - prompt: Click on "Select The Date".
+    commands:
+      - command: hover-text
+        text: Sign up now!
+        description: close button on the pop-up
+        action: click
+      - command: hover-text
+        text: Choose
+        description: button next to Date of birth
+        action: click
+  - prompt: Choose a date from the calendar.
+    commands:
+      - command: hover-text
+        text: 15
+        description: date 15 in the calendar dropdown
+        action: click
+  - prompt: Assert that the chosen date is displayed.
+    commands:
+      - command: assert
+        expect: the date "01/15/1980" is displayed in the Date of birth field
